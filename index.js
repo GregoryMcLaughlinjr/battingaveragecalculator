@@ -17,7 +17,7 @@ function calculateAverage() {
   var x = hits;
   var y = walks;
 
-  const battingAverage = (x - y) / (w - y);
+  const battingAverage = x / (w - y);
 
   if (battingAverage <= .999) {
     let z = battingAverage.toFixed(3);
