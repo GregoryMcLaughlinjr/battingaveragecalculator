@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batting Average Calculator</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="index.js"></script>
+</head>
+<body onload="organ()">
+
+  <div id="calculatorOuterShell">
+    <div id="calculatorInnerShell">
+
+      <div id="calculatorInnerShell__heading">
+        <img id="batter" src="images/Better.png">
+        <h1>
+          Batting Average Calculator
+        </h1>
+      </div>
+
+      <div id="calculatorInnerShell__inputs">
+
+        <label for="atbats">
+          At Bats
+        </label>
+            <input type="text" name="atbats" id="calculatorInnerShell__inputs--atBats" placeholder="0">
+        
+
+        <label for="hits">
+          Hits
+        </label>
+            <input type="text" name="hits" id="calculatorInnerShell__inputs--hits" placeholder="0">
+
+
+        <label for="walks">
+          Walks
+        </label>
+            <input type="text" name="walks" id="calculatorInnerShell__inputs--walks" placeholder="0">
+
+            <button onclick="calculateAverage(); batSwing();" id="calculatorInnerShell__inputs--button" type="submit">Calculate</button>
+      </div>
+
+
+
+    </div>
+
+    <h1 id="average">Average .000%</h1>
+
+  </div>
+
+  
+</body>
+</html>
